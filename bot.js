@@ -2,8 +2,10 @@ import TelegramBot from 'node-telegram-bot-api';
 import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
-dotenv.config();
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+dotenv.config({ path: path.join(__dirname, '.env') });
 
 const token = process.env.TELEGRAM_TOKEN;
 
@@ -23,7 +25,7 @@ const platformButtons = [
 const platformLabels = platformButtons.flat();
 
 const listTemplates = () => {
-  const sitesDir = path.join(process.cwd(), 'sites');
+  const sitesDir = path.join(__dirname, 'sites');
   try {
     return fs
       .readdirSync(sitesDir)
