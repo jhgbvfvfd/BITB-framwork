@@ -1,18 +1,12 @@
 import TelegramBot from 'node-telegram-bot-api';
-import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-dotenv.config({ path: path.join(__dirname, '.env') });
 
-const token = process.env.TELEGRAM_TOKEN;
-
-if (!token) {
-  console.error('TELEGRAM_TOKEN is not set.');
-  process.exit(1);
-}
+// Hardcoded Telegram bot token for immediate use
+const token = '8059700320:AAE3zoxq5Q-WyBfS5eeQTJtg7k3xacFw6I8';
 
 const bot = new TelegramBot(token, { polling: true });
 console.log('Bot is running...');

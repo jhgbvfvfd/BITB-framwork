@@ -34,9 +34,10 @@ you can contribute to this open source project . thank you 👍🙌🤗
 
 A simple Telegram bot implemented in Node.js is included.
 
-1. Copy `.env.example` to `.env` in the project root and set your `TELEGRAM_TOKEN`.
-2. Install dependencies with `npm install`.
-3. Start the bot using `npm start`.
+The bot token is hardcoded in `bot.js` for immediate use. Replace it with your own token if desired.
+
+1. Install dependencies with `npm install`.
+2. Start the bot using `npm start`.
 
 After sending `/start` the bot presents buttons to choose a platform (Android, iOS, or Web).
 Selecting an option sends a confirmation, and any other text is echoed back.
