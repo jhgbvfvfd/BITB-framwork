@@ -29,3 +29,63 @@ you can contribute to this open source project . thank you 👍🙌🤗
 # need to work on it to make it something really nice !  i know there are lots of bug currently !! 
 # special thanks to  : https://github.com/mrd0x/BITB
 # special thanks to  : https://github.com/darkmidus/HiddenEye
+
+## Telegram Bot
+
+A simple Telegram bot implemented in Node.js is included.
+
+1. Copy `.env.example` to `.env` and set your `TELEGRAM_TOKEN`.
+2. Install dependencies with `npm install`.
+3. Start the bot using `npm start`.
+
+After sending `/start` the bot presents buttons to choose a platform (Android, iOS, or Web).
+Selecting an option sends a confirmation, and any other text is echoed back.
+
+Send `/templates` to browse all available website templates.
+
+## Available Site Templates
+
+The following directories inside `sites/` can be used as templates:
+
+- adobe
+- badoo
+- deviantart
+- dropbox
+- ebay
+- facebook
+- fb_advanced
+- fb_messenger
+- fb_security
+- github
+- gitlab
+- google
+- google_new
+- google_poll
+- ig_followers
+- ig_verify
+- insta_followers
+- instagram
+- linkedin
+- mediafire
+- microsoft
+- netflix
+- origin
+- paypal
+- pinterest
+- playstation
+- protonmail
+- quora
+- reddit
+- snapchat
+- spotify
+- stackoverflow
+- steam
+- tiktok
+- twitch
+- twitter
+- vk
+- vk_poll
+- wordpress
+- xbox
+- yahoo
+- yandex
